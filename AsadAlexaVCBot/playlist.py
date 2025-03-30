@@ -14,19 +14,19 @@ async def playlist(client, m: Message):
             chat_queue = get_queue(chat_id)
             if len(chat_queue) == 1:
                 await m.reply(
-                    f"**🎧 ɴᴏᴡ ᴘʟᴀʏɪɴɢ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`"
+                    f"**🎧 sᴇᴋᴀʀᴀɴɢ ᴍᴇᴍᴜᴛᴀʀ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`"
                 )
             else:
-                QUE = f"**🎧 ɴᴏᴡ ᴘʟᴀʏɪɴɢ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ PLAYLIST:**"
+                QUE = f"**🎧 ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ PLAYLIST:**"
                 keyboard = InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "❤️ ᴏᴡɴᴇʀ ❤️", url=f"https://t.me/Dr_Asad_Ali"
+                                "❤️ ᴏᴡɴᴇʀ ❤️", url=f"https://t.me/itsmearion"
                             ),
                             InlineKeyboardButton(
                                 "👨‍‍👧‍👦 ɢʀᴏᴜᴘ 👨‍👧‍👦",
-                                url=f"https://t.me/Shayri_Music_Lovers",
+                                url=f"https://t.me/arionsupport",
                             ),
                         ]
                     ]
@@ -39,4 +39,4 @@ async def playlist(client, m: Message):
                     QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
                 await m.reply(QUE, disable_web_page_preview=True)
         else:
-            await m.reply("😜 **ɪᴛᴛᴜ sᴇʏ ᴘᴀɢᴀʟ sᴏɴɢ ᴄʜᴀʟᴀ ʟᴇʏ ᴘᴇʜʟʏ**")
+            await m.reply("😜 **ᴡʟᴇᴇᴇᴇᴇᴇᴇᴇ**")
