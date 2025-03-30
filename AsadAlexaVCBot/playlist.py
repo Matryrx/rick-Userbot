@@ -17,7 +17,7 @@ async def playlist(client, m: Message):
                     f"**🎧 sᴇᴋᴀʀᴀɴɢ ᴍᴇᴍᴜᴛᴀʀ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`"
                 )
             else:
-                QUE = f"**🎧 ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ PLAYLIST:**"
+                QUE = f"**🎧 sᴇᴋᴀʀᴀɴɢ ᴍᴇᴍᴜᴛᴀʀ:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ PLAYLIST:**"
                 keyboard = InlineKeyboardMarkup(
                     [
                         [
