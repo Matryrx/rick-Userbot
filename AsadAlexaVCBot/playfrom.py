@@ -16,7 +16,7 @@ async def playfrom(client, m: Message):
         chat_id = m.chat.id
         if len(m.command) < 2:
             await m.reply(
-                "**USAGE:** \n\n`/playfrom [chat_id/username]` \n`/playfrom [chat_id/username] ; [no. of songs]`"
+                "**ᴘᴇᴍᴀᴋᴀɪᴀɴ:** \n\n`/playfrom [chat_id/username]` \n`/playfrom [chat_id/username] ; [no. of songs]`"
             )
         else:
             args = m.text.split(maxsplit=1)[1]
@@ -48,7 +48,7 @@ async def playfrom(client, m: Message):
                         )
                         add_to_queue(chat_id, songname, location, link, "Audio", 0)
                         await m.reply(
-                            f"**Started Playing Songs from {chat} ▶** \n**🎧 SONG** : [{songname}]({link}) \n**💬 CHAT** : `{chat_id}`",
+                            f"**ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ sᴜᴀʀᴀ ᴅᴀʀɪ {chat} ▶** \n**🎧 SONG** : [{songname}]({link}) \n**💬 CHAT** : `{chat_id}`",
                             disable_web_page_preview=True,
                         )
                 await hmm.delete()
