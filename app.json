@@ -1,32 +1,32 @@
 {
-    "name": "Asad Alexa Vc Userbot",
-    "description": "A Telegram Userbot To Play Audio And Video Songs in Voice Chat",
-    "logo": "https://telegra.ph/file/7fbaae079e71659672dde.jpg",
+    "name": "ridrerap",
+    "description": "gabut",
+    "logo": "https://files.catbox.moe/unaus3.jpg",
     "keywords": [
         "Telegram",
         "VCBot",
         "MusicPlayer"
     ],
-    "repository": "https://github.com/Lost-In-Dark/TG-MusicPlayer",
+    "repository": "https://github.com/Matryrx/rick-Userbot",
     "env": {
-        "SESSION": {
+        "SESSION": {BQFTOGgATO0IiBHjH7NQAYnnskjqaA3iDtHQBL7ltPGmSYNiTvwWHcT8W5fijyr1EHVsUSQAztdcwfhzeL22nErljG7gIxcLRM-xLUa_uNrTVNulkcQX9pzuZ-F7DWgOs04A8WVikP4s_3p84kDT4bcieF6_D6U3XNqfTN8-V4PliX_Erlmej9FDp0jGAs7RRJwL2j0cOHKkBGlQ2L1HIA30zGfgz5iYs8_91UlIyMqkbcy3SbgYiQhl0sIQGECyNYTHYGqKbnmTNkN4o-j6BJHXGNJUtkQXjnaDYMxP1My1j1JAdFbs8tDb46Um8gzSXEHPemCD_X5nyUrGGebd0P8e1e6gAAAAGBhJzGAA
             "description": "Pyrogram String Session @Pyrogram_String_Bot",
             "required": true
         },
-        "API_ID": {
+        "API_ID": {22231144
             "description": "my.telegram.org",
             "required": true
         },
-        "API_HASH": {
+        "API_HASH": {772292211b49baaae83b06b714576cd3
             "description": "my.telegram.org",
             "required": true
         },
-        "HNDLR": {
+        "HNDLR": {.
             "description": "Handler | Default (/)",
             "value": "/",
             "required": false 
         },
-        "GROUP_MODE": {
+        "GROUP_MODE": {True
             "description": "Anyone can play, if set to True. Set it to False to restrict play access to Sudo Users/Contacts only",
             "value": "True",
             "required": true 
