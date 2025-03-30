@@ -211,7 +211,7 @@ async def stream(client, m: Message):
                 hm = 1
 
             if hm == 0:
-                await huehue.edit(f"**ʏᴅᴛʟ ᴇʀʀᴏʀ ⚠️** \n\n`{ytlink}`")
+                await huehue.edit(f"**ᴇʀʀᴏʀ ⚠️** \n\n`{ytlink}`")
             else:
                 if chat_id in QUEUE:
                     pos = add_to_queue(chat_id, "Radio 📻", livelink, link, "Audio", 0)
