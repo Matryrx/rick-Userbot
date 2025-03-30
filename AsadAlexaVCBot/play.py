@@ -57,17 +57,17 @@ async def play(client, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "❤️ ᴏᴡɴᴇʀ ❤️", url=f"https://t.me/Dr_Asad_Ali"
+                        "❤️ ᴏᴡɴᴇʀ ❤️", url=f"https://t.me/itsmearion"
                     ),
                     InlineKeyboardButton(
-                        "👨‍‍👧‍👦 ɢʀᴏᴜᴘ 👨‍👧‍👦", url=f"https://t.me/Shayri_Music_Lovers"
+                        "👨‍‍👧‍👦 ɢʀᴜᴘ 👨‍👧‍👦", url=f"https://t.me/arionsupport"
                     ),
                 ]
             ]
         )
         if replied:
             if replied.audio or replied.voice:
-                huehue = await replied.reply("👨‍⚖️ **Aɴᴀʟʏsɪɴɢ...**")
+                huehue = await replied.reply("👨‍⚖️ **ᴀɴᴀʟɪsɪs...**")
                 dl = await replied.download()
                 link = replied.link
                 if replied.audio:
@@ -94,28 +94,28 @@ async def play(client, m: Message):
                         )
                         add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                         await huehue.edit(
-                            f"🎶 **sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ ᴀᴜᴅɪᴏ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
+                            f"🎶 **ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
                         )
                     except Exception as hmme:
                         await huehue.edit(hmme)
             else:
                 if len(m.command) < 2:
                     await m.reply(
-                        "😜 **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
+                        "😜 **ʀᴇᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴀᴛᴀᴜ ʙᴇʀɪᴋᴀɴ sᴀʏᴀ ᴊᴜᴅᴜʟ ᴍᴜsɪᴋ**"
                     )
                 else:
-                    huehue = await m.reply("🔎 **Sᴇᴀʀᴄʜɪɴɢ...**")
+                    huehue = await m.reply("🔎 **ᴍᴇɴᴄᴀʀɪ...**")
                     query = m.text.split(None, 1)[1]
                     search = ytsearch(query)
                     if search == 0:
-                        await huehue.edit("🤔 **ɴᴏᴛʜɪɴɢ ғᴏᴜɴᴅ ᴛʀʏ ᴀɴᴏᴛʜᴇʀ sᴇᴀʀᴄʜ**")
+                        await huehue.edit("🤔 **ᴛɪᴅᴀᴋ ᴍᴇɴᴇᴍᴜᴋᴀɴ ᴊᴜᴅᴜʟ ʏᴀɴɢ ᴅɪᴄᴀʀɪ**")
                     else:
                         songname = search[0]
                         url = search[1]
                         hm, ytlink = await ytdl(url)
                         if hm == 0:
                             await huehue.edit(
-                                f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/Dr_Asad_Ali)",
+                                f"**ᴇʀʀᴏʀ ⚠️** ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ [ᴏᴡɴᴇʀ](t.me/itsmearion)",
                                 disable_web_page_preview=True,
                             )
                         else:
@@ -124,7 +124,7 @@ async def play(client, m: Message):
                                     chat_id, songname, ytlink, url, "Audio", 0
                                 )
                                 await huehue.edit(
-                                    f"**ʏᴏᴜʀ sᴏɴɢ ɪs ᴀᴛ ᴡᴀɪᴛɪɴɢ ᴘᴏsɪᴛɪᴏɴ** 👉 **#{pos}**"
+                                    f"**ʟᴀɢᴜ ᴋᴀᴍᴜ sᴇᴅᴀɴɢ ᴍᴇɴᴜɴɢɢᴜ ᴘᴇᴍᴜᴛᴀʀᴀɴ** 👉 **#{pos}**"
                                 )
                             else:
                                 try:
@@ -139,7 +139,7 @@ async def play(client, m: Message):
                                         chat_id, songname, ytlink, url, "Audio", 0
                                     )
                                     await huehue.edit(
-                                        f"🎶 **sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ ᴀᴜᴅɪᴏ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
+                                        f"🎶 **ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
                                     )
                                 except Exception as ep:
                                     await huehue.edit(f"`{ep}`")
@@ -147,21 +147,21 @@ async def play(client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "😜 **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
+                    "😜 **ʀᴇᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴀᴛᴀᴜ ʙᴇʀɪᴋᴀɴ sᴀʏᴀ ᴊᴜᴅᴜʟ ᴍᴜsɪᴋ**"
                 )
             else:
-                huehue = await m.reply("🔎 **Sᴇᴀʀᴄʜɪɴɢ...**")
+                huehue = await m.reply("🔎 **ᴍᴇɴᴄᴀʀɪ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await huehue.edit("🤔 **ɴᴏᴛʜɪɴɢ ғᴏᴜɴᴅ ᴛʀʏ ᴀɴᴏᴛʜᴇʀ sᴇᴀʀᴄʜ**")
+                    await huehue.edit("🤔 **ᴛɪᴅᴀᴋ ᴍᴇɴᴇᴍᴜᴋᴀɴ ᴊᴜᴅᴜʟ ʏᴀɴɢ ᴅɪᴄᴀʀɪ**")
                 else:
                     songname = search[0]
                     url = search[1]
                     hm, ytlink = await ytdl(url)
                     if hm == 0:
                         await huehue.edit(
-                            f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/Dr_Asad_Ali)",
+                            f"**ᴇʀʀᴏʀ ⚠️** ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ [ᴏᴡɴᴇʀ](t.me/itsmearion)",
                             disable_web_page_preview=True,
                         )
                     else:
@@ -170,7 +170,7 @@ async def play(client, m: Message):
                                 chat_id, songname, ytlink, url, "Audio", 0
                             )
                             await huehue.edit(
-                                f"**ʏᴏᴜʀ sᴏɴɢ ɪs ᴀᴛ ᴡᴀɪᴛɪɴɢ ᴘᴏsɪᴛɪᴏɴ** 👉 **#{pos}**"
+                                f"**ʟᴀɢᴜ ᴋᴀᴍᴜ sᴇᴅᴀɴɢ ᴍᴇɴᴜɴɢɢᴜ ᴘᴇᴍᴜᴛᴀʀᴀɴ** 👉 **#{pos}**"
                             )
                         else:
                             try:
@@ -183,7 +183,7 @@ async def play(client, m: Message):
                                 )
                                 add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                                 await huehue.edit(
-                                    f"🎶 **sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ ᴀᴜᴅɪᴏ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
+                                    f"🎶 **ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ ▶** \n**🎧 sᴏɴɢ** : [{songname[:15]}] \n**💬 ᴄʜᴀᴛ** : `{chat_id}`"
                                 )
                             except Exception as ep:
                                 await huehue.edit(f"`{ep}`")
@@ -195,7 +195,7 @@ async def stream(client, m: Message):
         chat_id = m.chat.id
         if len(m.command) < 2:
             await m.reply(
-                "`Give A Link/LiveLink/.m3u8 URL/YTLink to Play Audio from 🎶`"
+                "`ʙᴇʀɪᴋᴀɴ ʟɪɴᴋ / ʟɪᴠᴇʟɪɴᴋ / ʏᴛ ʟɪɴᴋ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ sᴜᴀʀᴀ 🎶`"
             )
         else:
             link = m.text.split(None, 1)[1]
@@ -211,12 +211,12 @@ async def stream(client, m: Message):
                 hm = 1
 
             if hm == 0:
-                await huehue.edit(f"**YTDL ERROR ⚠️** \n\n`{ytlink}`")
+                await huehue.edit(f"**ʏᴅᴛʟ ᴇʀʀᴏʀ ⚠️** \n\n`{ytlink}`")
             else:
                 if chat_id in QUEUE:
                     pos = add_to_queue(chat_id, "Radio 📻", livelink, link, "Audio", 0)
                     await huehue.edit(
-                        f"**ʏᴏᴜʀ sᴏɴɢ ɪs ᴀᴛ ᴡᴀɪᴛɪɴɢ ᴘᴏsɪᴛɪᴏɴ** 👉 **#{pos}**"
+                        f"**ʟᴀɢᴜ ᴋᴀᴍᴜ sᴇᴅᴀɴɢ ᴍᴇɴᴜɴɢɢᴜ ᴘᴇᴍᴜᴛᴀʀᴀɴ** 👉 **#{pos}**"
                     )
                 else:
                     try:
