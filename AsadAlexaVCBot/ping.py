@@ -41,7 +41,7 @@ async def ping(client, m: Message):
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    await m_reply.edit(f"`{delta_ping * 1000:.3f} ms` \n**Uptime ⏳** - `{uptime}`")
+    await m_reply.edit(f"`{delta_ping * 1000:.3f} ms` \n**ᴜᴘᴛɪᴍᴇ 🇨🇳** - `{uptime}`")
 
 
 @Client.on_message(contact_filter & filters.command(["restart"], prefixes=f"{HNDLR}"))
@@ -54,11 +54,11 @@ async def restart(client, m: Message):
 
 @Client.on_message(contact_filter & filters.command(["help"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-    HELP = f"**🛠 ʜᴇʟᴘ ᴍᴇɴᴜ 🛠** \n\n**ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ɪғ ɢʀᴏᴜᴘ ᴍᴏᴅᴇ sᴇᴛ ᴛᴏ ᴛʀᴜᴇ**\n**ᴛᴏ ᴘʟᴀʏ ᴀᴜᴅɪᴏ sᴏɴɢ** {HNDLR}play\n** ᴛᴏ ᴘʟᴀʏ ᴠɪᴅᴇᴏ sᴏɴɢ** {HNDLR}vplay\n**ғᴏʀ ʀᴀᴅɪᴏ ʟɪᴠᴇ sᴛʀᴇᴀᴍɪɴɢ** {HNDLR}stream (**ғᴏʀ ʀᴅɪᴏ ʟɪɴᴋs**) \n**ғᴏʀ ʟɪᴠᴇ ʟɪɴᴋs** {HNDLR}vstream (ғᴏʀ .m3u8 / ʟɪᴠᴇ ʟɪɴᴋs) \n\n**SUDO SOMMANDS** (**ʏᴏᴜ ᴄᴀɴ ʀᴜɴ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ɪғ ʏᴏᴜ ᴀʀᴇ ɪɴ ᴍʏ ᴄᴏɴᴛᴀᴄᴛ ʟɪsᴛ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ** @Dr_Asad_Ali **ғᴏʀ ʙᴇᴄᴏᴍɪɴɢ sᴜᴅᴏ**): \n**ғᴏʀ ɢᴇᴛᴛɪɴɢ ᴘɪɴɢ** {HNDLR}ping \n**sᴋɪᴘ ᴛʜᴇ sᴏɴɢ** {HNDLR}skip \n**ᴛᴏ ᴘᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ** {HNDLR}pause ᴀɴᴅ **ᴛᴏ ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ **{HNDLR}resume \n**ᴛᴏ sᴛᴏᴘ ᴛʜᴇ sᴏɴɢ** {HNDLR}stop / **ᴛᴏ ᴇɴᴅ ᴛᴏ sᴏɴɢ** {HNDLR}end \n**ғᴏʀ ʜᴇʟᴘ ᴍᴇɴᴜ** {HNDLR}help \n**ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ** {HNDLR}repo \n**ᴛᴏ ʀᴇsᴛᴀʀᴛ ʙᴏᴛ** {HNDLR}restart"
+    HELP = f"**🇨🇳 ʜᴇʟᴘ ᴍᴇɴᴜ 🇨🇳** \n\n**sᴇᴍᴜᴀɴʏᴀ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ɪɴɪ**\n**ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ** {HNDLR}play\n** ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴠɪᴅᴇᴏ (ᴊᴀɴɢᴀɴ ʙᴏᴋᴇᴘ ᴛᴏʟᴏʟ)** {HNDLR}vplay\n**ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴇɴɢᴀʀᴋᴀɴ ʀᴀᴅɪᴏ** {HNDLR}stream (**ʟɪɴᴋ ʀᴀᴅɪᴏ**) \n**ᴜɴᴛᴜᴋ ʟɪᴠᴇsᴛʀᴇᴀᴍ** {HNDLR}vstream (ғᴏʀ .m3u8 / ʟɪᴠᴇ ʟɪɴᴋs) \n\n**ᴜɴᴛᴜᴋ sᴜᴅᴏ** (**ᴋᴀᴍᴜ ʙɪsᴀ ɢᴜɴᴀɪɴ ɪɴɪ ᴋᴀʟᴏ ᴋᴀᴍᴜ ᴅɪʙᴇʀɪᴋᴀɴ ᴀᴋsᴇs ᴏʟᴇʜ** @itsmeaeron **ᴀɢᴀʀ ᴅɪʙᴇʀɪᴋᴀɴ ᴀᴋsᴇs sᴜᴅᴏ**): \n**ᴍᴇʟɪʜᴀᴛ ᴘɪɴɢ ʙᴏᴛ** {HNDLR}ping \n**ᴍᴇʟᴇᴡᴀᴛɪ ᴘᴜᴛᴀʀᴀɴ** {HNDLR}skip \n**ᴍᴇɴᴊᴇᴅᴀ ᴘᴜᴛᴀʀᴀɴ** {HNDLR}pause ᴀɴᴅ **ᴍᴇʟᴀɴᴊᴜᴛᴋᴀɴ ᴘᴜᴛᴀʀᴀɴ ʏᴀɴɢ ᴅɪᴊᴇᴅᴀ **{HNDLR}resume \n**ᴍᴇɴsᴛᴏᴘ ᴘᴜᴛᴀʀᴀɴ** {HNDLR}stop / **ᴍᴇɴɢᴀᴋʜɪʀɪ ᴘᴜᴛᴀʀᴀɴ** {HNDLR}end \n**ʜᴇʟᴘ ᴍᴇɴᴜ** {HNDLR}help \n**ʀᴇsᴛᴀʀᴛ ʙᴏᴛ** {HNDLR}restart"
     await m.reply(HELP)
 
 
 @Client.on_message(contact_filter & filters.command(["repo"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
-    REPO = f"**🛠 IF YOU WANT REPO 🛠** \n\n**ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ** [ᴏɴᴡᴇʀ](t.me/Dr_Asad_Ali)\n**ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴍʏ ᴘʀᴏᴊᴇᴄᴛ ᴛʜᴇ ɢɪᴠᴇ ᴍᴇ ʜᴇᴀʀᴛ ᴀɴᴅ ᴊᴏɪɴ** [ʜᴇᴀʀᴛ](t.me/Give_Me_Heart) [ᴜᴘᴅᴀᴛᴇs](t.me/AsadSupport) [ᴊᴏɪɴ](t.me/Shayri_Music_Lovers)"
+    REPO = f"**🇨🇳 ᴋᴀʟᴏ ᴋᴀᴍᴜ ᴍᴀᴜ ʀᴇᴘᴏ 🇨🇳** \n\n**ʙɪsᴀ ᴍᴇɴɢʜᴜʙᴜɴɢɪ** [ᴏɴᴡᴇʀ](t.me/itsmearion)\n**ᴋᴀʟᴏ ᴋᴀᴍᴜ sᴜᴋᴀ ᴘʀᴏᴊᴇᴄᴛ ᴀᴋᴜ, ᴛᴏʟᴏɴɢ ʙᴇʀɪᴋᴀɴ ʀᴇᴀᴄᴛ ᴅᴀɴ ᴊᴏɪɴ** [sᴜᴋᴀ](t.me/itsmeerickkkkkk) [ᴜᴘᴅᴀᴛᴇs](t.me/arionsupport) [ᴊᴏɪɴ](https://t.me/+BE4Cav641LdkYTRl)"
     await m.reply(REPO)
