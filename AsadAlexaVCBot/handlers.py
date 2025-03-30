@@ -87,7 +87,7 @@ async def on_end_handler(client, update: Update):
             )
         else:
             await bot.send_message(
-                chat_id, f"**🎧 sᴇᴋᴀʀᴀɴɢ ᴍᴇᴍᴜᴛᴀʀ** \n[{op[0]}]({op[1]}) | `{op[2]}`"
+                chat_id, f"**🎧 ᴍᴇᴍᴜʟᴀɪ ᴘᴜᴛᴀʀᴀɴ** \n[{op[0]}]({op[1]}) | `{op[2]}`"
             )
             keyboard = InlineKeyboardMarkup(
                 [
